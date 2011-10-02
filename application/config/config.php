@@ -18,7 +18,7 @@ $config['site_protocol'] = 'http';
  *
  * This can be removed by using URL rewriting.
  */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /**
  * Whether or not you want to have the auto upgrader enabled.
@@ -69,7 +69,7 @@ $config['enable_hooks'] = TRUE;
  *  3 - Notices
  *  4 - Debugging
  */
-$config['log_threshold'] = 1;
+$config['log_threshold'] = 4;
 
 /**
  * Message logging directory.
