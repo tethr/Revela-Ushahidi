@@ -648,7 +648,8 @@
 			var map_layer;
 			markers = null;
 			var catID = '';
-			OpenLayers.Strategy.Fixed.prototype.preload=true;
+			//OpenLayers.Strategy.Fixed.prototype.preload=true;
+			OpenLayers.Strategy.Cluster();
 			
 			/*
 			- Initialize Map
