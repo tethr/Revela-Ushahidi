@@ -258,7 +258,7 @@ function runScheduler(img){img.onload = null;img.src = '".url::site().'scheduler
 		$search .= "<div class=\"search-form\">";
 		$search .= "<form method=\"get\" id=\"search\" action=\"".url::site()."search/\">";
 		$search .= "<ul>";
-		$search .= "<li><input type=\"text\" name=\"k\" value=\"\" class=\"text\" /></li>";
+		$search .= "<li><input type=\"text\" name=\"k\" value=\"Busca:\" class=\"text\" /></li>";
 		$search .= "<li><input type=\"submit\" name=\"b\" class=\"searchbtn\" value=\"search\" /></li>";
 		$search .= "</ul>";
 		$search .= "</form>";

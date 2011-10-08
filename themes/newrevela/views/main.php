@@ -18,7 +18,8 @@
 			
 	<div id="social">
 			
-		<div id="socialicons">
+	<!--
+	<div id="socialicons">
 			<ul class="socialicons">
 			<li> <a href="#"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_fb.png"></a></li>
 			<li> <a href="#"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_tw.png"></a></li>
@@ -27,10 +28,14 @@
 
 			</ul>
 		</div>
-			
+-->
+								<a href="/reports/submit"><img src="http://revela.dev.tethr.org/themes/newrevela/images/revalabutton.png" class="bigrevelabutton"> </a>
+
 		<div id="threeclicks">
+
 			<h4>Revela em 3 cliques</h4>
-			<img src="http://revela.dev.tethr.org/themes/newrevela/images/numbers.png">
+	<div class="threeclicksred"><img src="http://revela.dev.tethr.org/themes/newrevela/images/123-new.png"></div>
+
 			<ul>
 			<li class="veja"> <a href="#">Veja</a></li>
 			<li class="revele"> <a href="#">Revele</a></li>
@@ -39,7 +44,8 @@
 			</ul>
 		</div>
 			
-		<div id="android">
+	<!--
+	<div id="android">
 			<h4>Baixe o Aplicativo Revela</h4>
 			<ul>
 			<li> <a href="#">iphone</a></li>
@@ -47,49 +53,75 @@
 
 			</ul>
 		</div>
+-->
 			
 			
 			</div> <!-- end social -->
 			
-		<div id="florestral">
-			
-			<h4>Votação dia 20 de outubro.</h4>
-			<div class="florestralwidget">
-			
-Antes de se preocupar com o mundo, preocupe se com si mesmo.Se a questão é a fome, parem de exportar e negociem com a população faminta do Brasil. Plenário esta dividido.
-			</div>
-			
-		</div> <!-- end florestral -->
-			
-			
-			<div id="poststweeterwrapper">
-			
-			<div id="noticias">
-			what goes here? i recommend an iFrame for both, quick and easy.
-			</div>
-			
-			<div id="tweets">
-			twweeettss!
-		
-			</div>
-			
-			
-			</div> <!-- end posts tweeter wrapper -->
-			
-			<div id="gallery">
-			<h4>Ativismo e arte</h4>
-			<div id="gallerywrapper">
-			gallery here
-			</div> <!-- end gallery wrapper -->
-			
-			<div id="gallerymenu">
-			<ul>
-			<li> <a href="#">Galeria</a></li>
-			<li> <a href="#">Participe</a></li>
+			<div id="categorieswrapper">
+						<div id="catwrapertop">dgdsg</div>
 
-			</ul>
+							
+				<!-- category filters 
+				// peter: add the category filter here....
+				-->
+				<div id="cat-filters-placer">
+			<!-- peter: 	this makes it hide and open, seems unnessary
+<div class="cat-filters clearingfix">
+				<strong><?php echo Kohana::lang('ui_main.category_filter');?> <span>[<a href="javascript:toggleLayer('category_switch_link', 'category_switch')" id="category_switch_link"><?php echo Kohana::lang('ui_main.hide'); ?></a>]</span></strong>
 			</div>
-			</div> <!-- end gallery div -->
+-->
+
+		
+			<ul id="category_switch" class="category-filters">
+				<li><a class="active" id="cat_0" href="#"><span class="swatch" style="background-color:<?php echo "#".$default_map_all;?>"></span><span class="category-title"><?php echo Kohana::lang('ui_main.all_categories');?></span></a></li>
+				<?php
+					foreach ($categories as $category => $category_info)
+					{
+						$category_title = $category_info[0];
+						$category_color = $category_info[1];
+						$category_image = '';
+						$color_css = 'class="swatch" style="background-color:#'.$category_color.'"';
+						if($category_info[2] != NULL && file_exists(Kohana::config('upload.relative_directory').'/'.$category_info[2])) {
+							$category_image = html::image(array(
+								'src'=>Kohana::config('upload.relative_directory').'/'.$category_info[2],
+								'style'=>'float:left;padding-right:5px;'
+								));
+							$color_css = '';
+						}
+						echo '<li><a href="#" id="cat_'. $category .'"><span '.$color_css.'>'.$category_image.'</span><span class="category-title">'.$category_title.'</span></a>';
+						// Get Children
+						echo '<div class="hide" id="child_'. $category .'">';
+                                                if( sizeof($category_info[3]) != 0)
+                                                {
+                                                    echo '<ul>';
+                                                    foreach ($category_info[3] as $child => $child_info)
+                                                    {
+                                                            $child_title = $child_info[0];
+                                                            $child_color = $child_info[1];
+                                                            $child_image = '';
+                                                            $color_css = 'class="swatch" style="background-color:#'.$child_color.'"';
+                                                            if($child_info[2] != NULL && file_exists(Kohana::config('upload.relative_directory').'/'.$child_info[2])) {
+                                                                    $child_image = html::image(array(
+                                                                            'src'=>Kohana::config('upload.relative_directory').'/'.$child_info[2],
+                                                                            'style'=>'float:left;padding-right:5px;'
+                                                                            ));
+                                                                    $color_css = '';
+                                                            }
+                                                            echo '<li style="padding-left:20px;"><a href="#" id="cat_'. $child .'"><span '.$color_css.'>'.$child_image.'</span><span class="category-title">'.$child_title.'</span></a></li>';
+                                                    }
+                                                    echo '</ul>';
+                                                }
+						echo '</div></li>';
+					}
+				?>
+			</ul>
+			
+			
+			
+			
+			
+<div id="kml">
 						
 			<?php
 			if ($layers)
@@ -120,6 +152,67 @@ Antes de se preocupar com o mundo, preocupe se com si mesmo.Se a questão é a fom
 				<?php
 			}
 			?>
+			
+			</div> <!-- kml END -->
+			
+			
+			
+			
+			
+			</div>
+			
+			<!-- / category filters -->
+
+
+			
+			
+			
+			</div> <!-- end categories wrapper -->
+			
+			
+	<!--
+	<div id="florestral">
+			
+			<h4>Votação dia 20 de outubro.</h4>
+			<div class="florestralwidget">
+			
+Antes de se preocupar com o mundo, preocupe se com si mesmo.Se a questão é a fome, parem de exportar e negociem com a população faminta do Brasil. Plenário esta dividido.
+			</div>
+			
+		</div>
+--> <!-- end florestral -->
+			
+			
+			<!--<div id="poststweeterwrapper">
+			
+			<div id="noticias">
+			what goes here? i recommend an iFrame for both, quick and easy.
+			</div>
+			
+			<div id="tweets">
+			twweeettss!
+		
+			</div>
+			
+			
+			</div>  end posts tweeter wrapper -->
+			
+		<!--	<div id="gallery">
+			<h4>Ativismo e arte</h4>
+			<div id="gallerywrapper">
+			gallery here
+			</div>  
+			
+			<div id="gallerymenu">
+			<ul>
+			<li> <a href="#">Galeria</a></li>
+			<li> <a href="#">Participe</a></li>
+
+			</ul>
+			</div>
+			</div>
+			--> <!-- end gallery div -->
+
 			
 			
 			<?php
@@ -229,66 +322,10 @@ Antes de se preocupar com o mundo, preocupe se com si mesmo.Se a questão é a fom
 				?>
 				
 				
-				
-				<!-- category filters 
-				// peter: add the category filter here....
-				-->
-				<div id="cat-filters-placer">
-			<!-- peter: 	this makes it hide and open, seems unnessary
-<div class="cat-filters clearingfix">
-				<strong><?php echo Kohana::lang('ui_main.category_filter');?> <span>[<a href="javascript:toggleLayer('category_switch_link', 'category_switch')" id="category_switch_link"><?php echo Kohana::lang('ui_main.hide'); ?></a>]</span></strong>
-			</div>
--->
-Amazonas: Quadro das atividades.
-</br>
-		
-			<ul id="category_switch" class="category-filters">
-				<li><a class="active" id="cat_0" href="#"><span class="swatch" style="background-color:<?php echo "#".$default_map_all;?>"></span><span class="category-title"><?php echo Kohana::lang('ui_main.all_categories');?></span></a></li>
-				<?php
-					foreach ($categories as $category => $category_info)
-					{
-						$category_title = $category_info[0];
-						$category_color = $category_info[1];
-						$category_image = '';
-						$color_css = 'class="swatch" style="background-color:#'.$category_color.'"';
-						if($category_info[2] != NULL && file_exists(Kohana::config('upload.relative_directory').'/'.$category_info[2])) {
-							$category_image = html::image(array(
-								'src'=>Kohana::config('upload.relative_directory').'/'.$category_info[2],
-								'style'=>'float:left;padding-right:5px;'
-								));
-							$color_css = '';
-						}
-						echo '<li><a href="#" id="cat_'. $category .'"><span '.$color_css.'>'.$category_image.'</span><span class="category-title">'.$category_title.'</span></a>';
-						// Get Children
-						echo '<div class="hide" id="child_'. $category .'">';
-                                                if( sizeof($category_info[3]) != 0)
-                                                {
-                                                    echo '<ul>';
-                                                    foreach ($category_info[3] as $child => $child_info)
-                                                    {
-                                                            $child_title = $child_info[0];
-                                                            $child_color = $child_info[1];
-                                                            $child_image = '';
-                                                            $color_css = 'class="swatch" style="background-color:#'.$child_color.'"';
-                                                            if($child_info[2] != NULL && file_exists(Kohana::config('upload.relative_directory').'/'.$child_info[2])) {
-                                                                    $child_image = html::image(array(
-                                                                            'src'=>Kohana::config('upload.relative_directory').'/'.$child_info[2],
-                                                                            'style'=>'float:left;padding-right:5px;'
-                                                                            ));
-                                                                    $color_css = '';
-                                                            }
-                                                            echo '<li style="padding-left:20px;"><a href="#" id="cat_'. $child .'"><span '.$color_css.'>'.$child_image.'</span><span class="category-title">'.$child_title.'</span></a></li>';
-                                                    }
-                                                    echo '</ul>';
-                                                }
-						echo '</div></li>';
-					}
-				?>
-			</ul>
-			
-			</div>
-			
-			<!-- / category filters -->
+<!-- MAP CATEGORIES WERE HERE -->
+
+
+
 
 				<!-- peter: seems that this is not used -->
 				<?php
@@ -298,24 +335,7 @@ Amazonas: Quadro das atividades.
 				</div> <!-- end map wrapper -->
 				
 								
-				<div id="videospace">
-					<div id="videobox">
-					video
-					<br> 
-					looks like some sort of video switcher tabs, this is gona require more programming so i left it out for now.
-					</div> <!-- end videobox -->
-					
-					<div id="tickerbox">
-					some news?
-					</div> <!-- end tickerbox -->
 				
-				
-				</div> <!-- end video space -->
-				
-				<div id="legaltext">
-				Texto Legal - Política de Privacidade
-				</div> <!-- end legal text -->
-
 			</div>
 		</div>
 		<!-- / content column -->
@@ -325,15 +345,57 @@ Amazonas: Quadro das atividades.
 <!-- / main body -->
 
 <!-- content -->
-<div class="content-container">
 
-	<!-- content blocks -->
-	<div class="content-blocks clearingfix">
-		<ul class="content-column">
-			<?php blocks::render(); ?>
-		</ul>
-	</div>
-	<!-- /content blocks -->
+<div id="footcontent">
+
+<table width="980" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+    <div id="tickerbox">
+					
+					</div> <!-- end tickerbox -->
+					</td>
+    <td>
+							<div id="videoswrapper">
+							<div id="videoplayer">
+					
+<iframe src="http://player.vimeo.com/video/30072405?title=0&amp;byline=0&amp;portrait=0" width="350" height="240" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+					</div>
+					
+					
+					</div> <!-- end videoswrapper -->
+					
+					</td>
+    <td>
+    <div id="tweeterwrapper">
+
+<div id="tweets"> the tweets here</div>
+</td>
+  </tr>
+</table>
+
+
+					
+					
+					
+					
+					
+
 
 </div>
-<!-- content -->
+
+
+
+
+	
+
+				<div id="legaltext">
+Texto Legal - Política de Privacidade
+				</div> <!-- end legal text -->
+
+<span class="patrons"><img src="http://revela.dev.tethr.org/themes/newrevela/images/patrons1.jpg"></span>
+</div> <!-- end foot content -->
+
+
+
+

@@ -117,21 +117,24 @@ div#header{
     position: relative;
     height: 154px;
     margin: 10px 0px 0px 0px;
-background: url(../images/headerbg1.gif) 50% 0 no-repeat;
+background: url(../images/headerbg2.gif) 50% 0 no-repeat;
 
 
 }
 
 #beta
 {
-background: url(../images/beta.png) no-repeat;
-height:51px;
+background: url("http://revela.dev.tethr.org/themes/newrevela/css/../images/beta.png") top no-repeat;
+height:111px;
 width:51px;
 float:left;
 margin-left:30px;
-margin-top: 30px;
-
-
+margin-top: 10px;
+position:absolute;
+}
+.rssbutton
+{
+margin-top:60px;
 }
 
 #apoios
@@ -161,9 +164,9 @@ div#logo{
 /*     background: #E2E2E2; */
     padding: 0px 24px;
     float: left;
-    margin: 0px 0px 0px 320px;
-background:  url(../images/logo1.png) 50% 0 no-repeat;
-width:148px;
+    margin: 0px 0px 0px 260px;
+background:  url(../images/logo2.png) 50% 0 no-repeat;
+width:204px;
 height:142px;
 display:block;
 }
@@ -270,11 +273,18 @@ div#main .withoutright div#content{
 /* peter : to build a lot of sidebar stuff */
 /********************************************/
 
-#adminmap_map_embedd, bigmapbutton, mapStatus
+#adminmap_map_embedd, .bigmapbutton, .mapStatus
 {
 display:none !important;
 }
 
+/*
+.filters
+{
+display:none !important;
+
+}
+*/
 
 #social
 {
@@ -283,7 +293,7 @@ display:none !important;
     padding: 0px 0px;
     float: left;
     margin: 0px;
-background:  url(../images/socialsbg1.png) 50% 0 no-repeat;
+/* background:  url(../images/socialsbg1.png) 50% 0 no-repeat; */
 width:295px;
 height:213px;
 display:block;
@@ -291,8 +301,10 @@ display:block;
 }
 #socialicons
 {
-margin-top:10px;
-margin-left:90px;
+margin-top:40px;
+margin-left:0px;
+background:  url("http://revela.dev.tethr.org/themes/newrevela/css/../images/socialarrow.png") bottom left no-repeat;
+padding-left: 110px;
 }
 .socialicons li
 {
@@ -302,8 +314,17 @@ margin:-2px;
 }
 
 
-
+.bigrevelabutton
+{
+float:left;
+}
+ .threeclicksred
+ {
+ margin: 20px 40px 0px 0px;
  
+ }
+
+
 #threeclicks h4
 {
     font-family: grotzechdcnlight;
@@ -318,12 +339,14 @@ margin:-2px;
 
 }
    
+
+   
    #threeclicks{
     background: none /* #C2C2C2 */;
     border: #FFF 0px solid;
-    padding: 0px 10px;
+    padding: 0px 0px;
 margin-top:5px;
-margin-left: 10px;
+margin-left: 0px;
 text-align: center;
 }
 
@@ -347,12 +370,11 @@ border-bottom:0px;
 border-right:0px;
 height:14px;
 border-color:#999;
-width:80px;
 }
 #threeclicks .revele
 {
-padding-left:10px;
-margin-right:5px;
+padding-left:0px;
+margin-right:0px;
 }
 div#threeclicks li:last-child{
 border-right: #999 2px solid;
@@ -363,7 +385,7 @@ border-right: #999 2px solid;
 div#threeclicks a{
     display: block;
     position: relative;
-    padding: 0px 12px;
+    padding: 0px 3px;
     color: #999;
     overflow: hidden;
     text-transform: none;
@@ -386,6 +408,7 @@ color:#000;
     padding:0px !important;
     margin:0px !important;
 
+
 }
 
 
@@ -397,10 +420,12 @@ color:#000;
     border: #FFF 0px solid;
     padding: 0px 10px;
 margin-top:28px;
-margin-left: 10px;
+margin-left: 0px;
 text-align: center;
-    background:  url(../images/androidbg2.png)bottom no-repeat;
-height:43px;
+    background:  url(../images/androidbg2.png) top no-repeat;
+height:23px;
+
+display:none;
 
 }
 
@@ -424,7 +449,7 @@ border-top:0px;
 border-bottom:0px;
 border-right:2px solid;
 height:14px;
-border-color:#999;
+border-color:#ff6600;
 
 
 }
@@ -435,7 +460,7 @@ div#android a{
     display: block;
     position: relative;
     padding: 0px 12px;
-    color: #999;
+    color: #ff6600;
     overflow: hidden;
     text-transform: uppercase;
     font-weight: bold;
@@ -511,16 +536,7 @@ height:280px;
 padding:10px;
 }
  
-#tweets
-{
 
-position:relative;
-top:90px;
-border:2px #fff dashed;
-height:220px;
-padding:10px;
-
-}
 
 
 #videospace
@@ -543,16 +559,19 @@ padding:10px;
 #tickerbox
 {
 position:relative;
-top:50px;
-border:2px #fff dashed;
-height:250px;
-padding:10px;
+top:0px;
+border:0px #fff dashed;
+height:420px;
+width:295px;
+padding:0px;
+background:  url(../images/noticias2.png) no-repeat;
+float:left;
 }
 
 #legaltext
 {
 margin-top: 5px;
-background:  url(../images/legaltext.png) no-repeat;
+background:  url(../images/footer3.jpg) no-repeat;
 height:40px;
 padding: 10px;
 text-align:center;
@@ -560,7 +579,10 @@ color: #999;
 
 }
 
-
+.patrons
+{
+float:right;
+}
 
 #gallery
 {
@@ -654,7 +676,68 @@ color:#000;
 
 
 
+#slogan
+{
+font-family: grotzechdcndemi; 
+font-size: 210%;
+margin-bottom:70px;
+color: #ff6600;
+width:180px;
+position:absolute;
+right:330px; top: 30px;
+text-align:right;
+}
+#sms
+{
+background:#ffffff;
+-webkit-border-radius: 14px;
+-moz-border-radius: 14px;
+border-radius: 14px;
+font-size:14px;
+font-family: arial, sans-serif;
+font-weight: bold;
+margin-top:30px;
+padding: 3px !important;
+text-align:center;
+color:#888;
+}
 
+
+
+#footcontent
+
+{
+}
+
+#tweeterwrapper
+{
+background: url(../images/twitterbg2.png) no-repeat;
+width:293px;
+height:409px;
+float:right;
+}
+#tweets
+{
+
+position:relative;
+top:90px;
+border:2px #fff dashed;
+height:220px;
+padding:10px;
+
+}
+
+#videoswrapper
+{
+background: url(../images/videosbg2.png) no-repeat;
+width:387px;
+height:419px;
+}
+
+#videoplayer
+{
+padding: 60px 10px 10px 20px;
+}
 
 
 /********************************************/
@@ -710,13 +793,12 @@ div#searchbox{
     position: absolute;
     top: 0px;
     right: 0px;
-    background: #BEBEBE;
-    border: #9F9F9F 2px solid;
+    background: none;
+    border: #9F9F9F 0px solid;
     border-top: 0;
-    width:380px;
+    width:280px;
     padding:0 0 10px 0;
     
-    display:none;
     
 }
 
@@ -764,22 +846,30 @@ div.search-form ul li{
 
 div.search-form input.text{
     padding: 2px 0px 2px 0px;
-    border: #9E9E9E 1px solid;
+    border: #9E9E9E 0px solid;
     margin: 0;
-    background: #EEEEEE;
-    width: 160px;
+    background: #fff;
+    width: 260px;
     font-size: 13px;
+    
+    -webkit-border-radius: 14px;
+-moz-border-radius: 14px;
+border-radius: 14px;
 }
 
 div.search-form input.searchbtn{
-    border: #868686 1px solid;
-    background: #EEEEEE url(../images/search-button.jpg) 5px 5px no-repeat;
+    border: #868686 0px solid;
+     background:  url("../images/searchicon.png") 5px 5px no-repeat; 
     width: 24px;
     height: 21px;
     margin: 0 0 0 -4px;
     text-indent: -10000px;
     cursor: pointer;
     padding: 1px 0 19px 0;
+right:20px;
+top: 6px;
+position:absolute;
+    
 }
 
 /* submit incident */
@@ -787,18 +877,19 @@ div.search-form input.searchbtn{
 /* peter: display none hack */
 
 div.submit-incident{
-    margin: 80px 0 0 0;
+    margin: 110px 0 0 0;
     position:absolute;
-    top:0; right:0;
-    width: 300px;
+    top:0; left:30;
+    width: 200px;
+
     
-   /*  display:none; */
+    display:none; 
 }
 
 div.submit-incident a, div.submit-incident a:hover{
     padding: 8px 10px 8px 35px;
     background-color: #368C00;
-    background-image: url(../images/submit-incident.png);
+    background-image: url("http://revela.dev.tethr.org/themes/newrevela/css/../images/submit-incident.png");
     background-position:10px 8px;
     background-repeat:no-repeat;
     color: #FFF;
@@ -807,7 +898,9 @@ div.submit-incident a, div.submit-incident a:hover{
     font-size: 14px;
     text-decoration: none;
     float: right;
-}
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;}
 
 
 /* mainmenu */
@@ -816,8 +909,8 @@ div#mainmenu{
     border: #FFF 0px solid;
     padding: 0px 10px;
 position:absolute;
-top:130px;
-margin-left:200px
+top:150px;
+margin-left:40px
 }
 
 div#mainmenu ul{
@@ -829,18 +922,30 @@ div#mainmenu ul{
 div#mainmenu li{
     float: left;
     display: block;
-    margin-right: 10px;
-border-width:2px;
+    margin-right: 1px;
+border-width:0px;
 border-style:solid;
 border-top:0px;
 border-bottom:0px;
 border-right:0px;
 height:14px;
 border-color:#999;
+padding-left:5px;
+padding-right:5px;
+padding-top:3px;
 
+background: #ccc;
+-webkit-border-bottom-right-radius: 7px;
+-webkit-border-bottom-left-radius: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-bottomleft: 7px;
+border-bottom-right-radius: 7px;
+border-bottom-left-radius: 7px;
+
+height:20px;
 }
 div#mainmenu li:last-child{
-border-right: #999 2px solid;
+border-right: #999 0px solid;
 
 }
 
@@ -848,19 +953,91 @@ border-right: #999 2px solid;
 div#mainmenu a{
     display: block;
     position: relative;
-    padding: 0px 12px;
-    color: #999;
+    padding: 0px 6px;
+    color: #fff;
     overflow: hidden;
-    text-transform: none;
+text-transform: uppercase;
     font-weight: bold;
     font-size: 100%;
+border-left: 2px #fff solid;
+border-right: 2px #fff solid;
+
 }
+
 
 div#mainmenu a:hover, div#mainmenu a.active{
     text-decoration: none;
     background: none /*#2E8AB8*/ ;
 color:#000;
 }
+/*logo menu */
+
+div#logomenu{
+    background: none /* #C2C2C2 */;
+    border: #FFF 0px solid;
+    padding: 0px 10px;
+position:absolute;
+right:0px; bottom:20px;
+margin-right:695px;
+font-weight:bold;
+font-size:120%;
+
+}
+
+div#logomenu ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display:normal;
+text-align:right;
+  
+}
+
+div#logomenu li{
+    display: block;
+    margin-right: 1px;
+border-width:0px;
+border-style:solid;
+border-top:0px;
+border-bottom:0px;
+border-right:0px;
+height:14px;
+border-color:#999;
+padding-left:5px;
+padding-right:5px;
+padding-top:3px;
+
+
+height:20px;
+}
+div#logomenu li:last-child{
+border-right: #999 0px solid;
+
+}
+
+
+div#logomenu a{
+    display: block;
+    position: relative;
+    padding: 0px 6px;
+    color: #888;
+    overflow: hidden;
+text-transform: none;
+    font-weight: bold;
+    font-size: 100%;
+
+
+}
+
+
+div#logomenu a:hover, div#logomenu a.active{
+    text-decoration: none;
+    background: none /*#2E8AB8*/ ;
+color:#000;
+}
+
+
+
 
 /* Filters */
 div.filters{
@@ -916,12 +1093,18 @@ a.share{
 
 div.map {
     border: #999 0px solid;
-    width: 600px;
-    height: 600px;
+    width: 686px;
+    height: 775px;
     position:relative;
-   left:43px;
+ /*
+  left:43px;
    top:43px;
+*/
 }
+
+
+
+
 
 /*peter display none */
 #mapStatus {
@@ -976,25 +1159,143 @@ div.slider-holder label{
 #mapwrapper
 {
 position:relative;
-background: url(../images/mapbg1.png) no-repeat;
+/* background: url(../images/mapbg1.png) no-repeat; */
 width:686px;
-height:686px;
+height:775px;
 }
+
+
+#categorieswrapper
+{
+position:relative;
+height:662px;
+top:130px;
+}
+
+#kml_switch
+{
+position:relative;
+
+}
+
+#catwrapertop
+
+{
+background: url(../images/cat-filterbg-top.png);
+width:294px;
+height:51px;
+
+}
+
+
+#category_switch #cat_0
+{
+display:none;
+}
+
+
+#category_switch #cat_1
+{
+font-size:100% !important;
+color:#003399;
+background: url("../images/cat-filter-bg1.png") no-repeat !important;
+height:20px;
+width:250px;
+
+
+}
+
+#category_switch #cat_1 .swatch
+{
+display:none;
+}
+#category_switch #cat_1 .category-title
+{
+margin-left:100px;
+}
+
+#category_switch #cat_2
+{
+font-size:100% !important;
+color:#003399;
+background: url("../images/cat-filter-bg1.png") no-repeat !important;
+height:20px;
+width:250px;
+margin-top:20px;
+
+}
+
+#category_switch #cat_2 .swatch
+{
+display:none;
+}
+#category_switch #cat_2 .category-title
+{
+margin-left:90px;
+}
+
+#category_switch #cat_3
+{
+font-size:100% !important;
+color:#003399;
+background: url("../images/cat-filter-bg1.png") no-repeat !important;
+height:20px;
+width:250px;
+margin-top:20px;
+
+}
+
+#category_switch #cat_3 .swatch
+{
+display:none;
+}
+#category_switch #cat_3 .category-title
+{
+margin-left:90px;
+}
+
+#category_switch #cat_5
+{
+font-size:100% !important;
+color:#003399;
+background: url("../images/cat-filter-bg1.png") no-repeat !important;
+height:20px;
+width:250px;
+margin-top:20px;
+
+}
+
+#category_switch #cat_5 .swatch
+{
+display:none;
+}
+#category_switch #cat_5 .category-title
+{
+margin-left:110px;
+}
+
+
+#kml
+{
+position:relative;
+padding-left:30px;
+}
+
 
 
 #cat-filters-placer
 {
-background: url(../images/flagbg1.png) no-repeat;
+background: #e2ece0 url(../images/cat-filterbg-bottom.png) bottom no-repeat;
 position:absolute;
-top:430px;
-left:10px;
-width:280px;
-height:247px;
+top:50px;
+left:0px;
+width:294px;
+
 
 font-family: grotzechdcndemi; 
 font-size: 1.4em;
 padding-top:10px;
-padding-left:10px;
+padding-left:0px;
 
 }
 
@@ -1040,7 +1341,7 @@ ul.category-filters li a{
     display: block;
     padding: 8px 10px 8px 5px;
     font-size: 15px;
-    text-transform: uppercase;
+    text-transform: none;
     font-weight: bold;
     text-decoration: none;
     color: #3F3F3F;
@@ -1049,6 +1350,11 @@ ul.category-filters li a{
     line-height: 17px;
     overflow: hidden;
 }
+
+ul.category-filters li li a{
+font-weight:lighter;
+}
+
 
 ul.category-filters li a:hover, ul.category-filters li a.active {
     color: #000;
