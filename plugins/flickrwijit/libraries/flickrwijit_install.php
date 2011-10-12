@@ -52,3 +52,4 @@ class Flickrwijit_Install {
 		$this->db->query('DROP TABLE `'.Kohana::config('database.default.table_prefix').'flickrwijit');
 	}
 }
+?>
