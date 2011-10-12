@@ -1,0 +1,50 @@
+.thumb {
+    /*width:99%;
+    overflow:hidden;*/
+    display : block;
+    margin:0 auto;
+    position:relative;
+    zoom:1;
+}
+
+#thumbnails ul{
+	padding: 0;
+	margin : 0;
+} 
+
+#thumbnails li{
+    margin : 0;
+    background : transparent;
+}
+
+#thumbnails, #themes li {
+    list-style : none;
+    margin:0;
+    overflow:hidden;
+    padding:0;
+}
+
+#thumbnails li {
+    float:left;
+    height:90px;
+    margin:0 2px 0 0;
+    width:90px;
+    padding:0;
+}
+
+#thumbnails li a {
+    opacity: .8;
+}
+
+#thumbnails li a:hover {
+    opacity: 1 !important;
+}
+#thumbnails li a:active {
+    opacity: 1 !important;
+}
+
+li img {
+    padding : 2px;
+    border:1px solid #fff;
+}
+
