@@ -759,7 +759,7 @@
 					"default":style,
 					"select": style
 				}),
-				strategies: [new OpenLayers.Strategy.Fixed()],
+				strategies: [new OpenLayers.Strategy.Fixed(), new OpenLayers.Strategy.Cluster()],
 				protocol: new OpenLayers.Protocol.HTTP({
 					url: fetchUrl,
 					format: protocolFormat
