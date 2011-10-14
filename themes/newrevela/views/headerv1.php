@@ -8,11 +8,6 @@
 	// Action::header_scripts - Additional Inline Scripts from Plugins
 	Event::run('ushahidi_action.header_scripts');
 	?>
-			<link href="flickrstyle.css" rel="stylesheet" type="text/css" media="all" /> 
-<!-- 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
-		<script src="scripts/cycle/jquery.cycle.all.min.js"></script>
-		<script src="scripts/jflickrfeed.min.js"></script>
-		<script src="scripts/setup.js"></script>
 </head>
 
 <body id="page">
@@ -25,36 +20,35 @@
 			<!-- searchbox -->
 			<div id="searchbox">
 				
+				<!-- user actions -->
+				<div id="loggedin_user_action" class="clearingfix">
+					<?php if($loggedin_username != FALSE){ ?>
+						<a href="<?php echo url::site().$loggedin_role;?>"><?php echo $loggedin_username; ?></a> [<a href="<?php echo url::site();?>logout/front"><?php echo Kohana::lang('ui_admin.logout');?></a>]
+					<?php } else { ?>
+						<a href="<?php echo url::site()."members/";?>"><?php echo Kohana::lang('ui_main.login'); ?></a>
+					<?php } ?>
+				</div><br/>
+				<!-- / user actions -->
+				
+				<!-- languages -->
+				<?php echo $languages;?>
+				<!-- / languages -->
 
 				<!-- searchform -->
 				<?php echo $search; ?>
 				<!-- / searchform -->
 
-
-	<div id="socialicons">
-			<ul class="socialicons">
-			<li> <a href="#"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_fb.png"></a></li>
-			<li> <a href="#"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_tw.png"></a></li>
-			<li> <a href="#"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_or.png"></a></li>
-
-			</ul>
-		</div>
-		
-			<div id="android">
-			<ul>
-			<li> <a href="#">iphone</a></li>
-			<li> <a href="#">Android</a></li>
-
-			</ul>
-		</div>
-		
-		
 			</div>
 			<!-- / searchbox -->
 			
-
+			<!-- added by peter -->
+			<div id="beta">
 			
+			</div>
 			
+				<!-- submit incident -->
+			<?php echo $submit_btn; ?>
+			<!-- / submit incident -->
 			
 			
 			<!-- logo -->
@@ -71,15 +65,11 @@
 			<?php } ?>
 			<!-- / logo -->
 			
-			
-				<!-- submit incident -->
-			<?php echo $submit_btn; ?>
-			<!-- / submit incident -->
+		
 			
 			
 			<!-- peter: sponsors -->
-		<!--
-
+		
 			<div id="apoios">
 			<div class="smalltext">
 			Apoios e Patrocínios:
@@ -93,29 +83,7 @@
 			
 			
 			</div>
--->
 			
-						<!-- added by peter -->
-			<div id="beta">
-				<a href="#"><img src="http://revela.dev.tethr.org/themes/newrevela/images/rss.png" class="rssbutton"></a>
-			</div>
-			
-			<div id="logomenu" class="clearingfix">
-					<ul>
-						<li> <a href="#">Quem Somos?</a> </li>					
-						<li> <a href="#">Links Úteis</a> </li>	
-						<li> <a href="#">Contatos</a> </li>	
-					</ul>
-			</div> <!-- end logo menu -->
-			
-			<div id="slogan">
-			A sua plataforma</br> de ativismo digital.
-			
-			<div id="sms">
-			SMS: xx 91 9226 5118
-			</div>
-			</div>
-
 		</div>
 		<!-- / header -->
 

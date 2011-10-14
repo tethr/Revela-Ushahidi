@@ -279,10 +279,7 @@ Antes de se preocupar com o mundo, preocupe se com si mesmo.Se a quest‹o Ž a fom
 -->
 			<!-- / additional content -->
 			
-			<?php
-			// Action::main_sidebar - Add Items to the Entry Page Sidebar
-			Event::run('ushahidi_action.main_sidebar');
-			?>
+	
 	
 		</div>
 		<!-- / right column -->
@@ -352,7 +349,17 @@ Antes de se preocupar com o mundo, preocupe se com si mesmo.Se a quest‹o Ž a fom
   <tr>
     <td>
     <div id="tickerbox">
+    <a href="/blog" class="noticiaslink">&nbsp;</a>
 					
+						<!-- content blocks -->
+	<div class="content-blocks clearingfix">
+		<ul class="content-column">
+			<?php blocks::render(); ?>
+		</ul>
+	</div>
+	<!-- /content blocks -->
+	
+	
 					</div> <!-- end tickerbox -->
 					</td>
     <td>
@@ -369,7 +376,45 @@ Antes de se preocupar com o mundo, preocupe se com si mesmo.Se a quest‹o Ž a fom
     <td>
     <div id="tweeterwrapper">
 
-<div id="tweets"> the tweets here</div>
+<div id="tweets">
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: '#revela OR \"Código Florestal\"',
+  interval: 30000,
+  title: 'Tweets Revela',
+  subject: '',
+  width: 'auto',
+  height: 280,
+  theme: {
+    shell: {
+      background: 'none',
+      color: '`'
+    },
+    tweets: {
+      background: 'none',
+      color: '#444444',
+      links: '#1985b5'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: true,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    toptweets: true,
+    behavior: 'default'
+  }
+}).render().start();
+</script>
+
+</div>
+</div>
+
 </td>
   </tr>
 </table>
@@ -378,9 +423,17 @@ Antes de se preocupar com o mundo, preocupe se com si mesmo.Se a quest‹o Ž a fom
 					
 					
 					
+		<div id="gallerycontainer">
 					
 					
+<!-- <ul id="cycle"></ul> -->
 
+<?php
+			// Action::main_sidebar - Add Items to the Entry Page Sidebar
+			Event::run('ushahidi_action.main_sidebar');
+			?>
+
+</div>
 
 </div>
 

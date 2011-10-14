@@ -149,7 +149,7 @@ class Manage_Controller extends Admin_Controller
 						$new_filename = "category_".$category->id."_".time();
 
 						// Resize Image to 32px if greater
-						Image::factory($filename)->resize(32,32,Image::HEIGHT)
+						Image::factory($filename)->resize(24,24,Image::HEIGHT)
 							->save(Kohana::config('upload.directory', TRUE) . $new_filename.".png");
 						// Create a 16x16 version too
 						Image::factory($filename)->resize(16,16,Image::HEIGHT)

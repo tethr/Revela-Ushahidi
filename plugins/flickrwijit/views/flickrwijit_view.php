@@ -12,7 +12,7 @@
       				}
       				?>
         		</ul>
-        		<a href="flickrwijit"><?php echo Kohana::lang('flickrwijit.flickrwijit_more')?></a>
+<!--         		<a href="flickrwijit"><?php echo Kohana::lang('flickrwijit.flickrwijit_more')?></a> -->
     	</div>
 	<?php } else { ?>
 		No flickr photos

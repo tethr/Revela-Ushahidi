@@ -193,8 +193,8 @@ class Admin_Category_Api_Object extends Api_Object_Core {
                     {
                         $new_filename = "category_".$category->id."_".time();
 
-                        // Resize Image to 32px if greater
-                        Image::factory($filename)->resize(32,32,
+                        // Resize Image to 32px (now 24px) if greater
+                        Image::factory($filename)->resize(24,24,
                             Image::HEIGHT)->save(Kohana::config('upload.directory',
                             TRUE) . $new_filename.".png");
 
@@ -433,8 +433,8 @@ class Admin_Category_Api_Object extends Api_Object_Core {
                         $new_filename = "category_".
                             $category->id."_".time();
 
-                        // Resize Image to 32px if greater
-                        Image::factory($filename)->resize(32,32,
+                        // Resize Image to 32px (now 24px) if greater
+                        Image::factory($filename)->resize(24,24,
                                 Image::HEIGHT)
                                 ->save(Kohana::config('upload.directory',
                                         TRUE) . $new_filename.".png");
