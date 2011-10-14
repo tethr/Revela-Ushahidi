@@ -8,6 +8,11 @@
 	// Action::header_scripts - Additional Inline Scripts from Plugins
 	Event::run('ushahidi_action.header_scripts');
 	?>
+			<link href="flickrstyle.css" rel="stylesheet" type="text/css" media="all" /> 
+<!-- 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+		<script src="scripts/cycle/jquery.cycle.all.min.js"></script>
+		<script src="scripts/jflickrfeed.min.js"></script>
+		<script src="scripts/setup.js"></script>
 </head>
 
 <body id="page">
@@ -97,7 +102,7 @@
 			
 			<div id="logomenu" class="clearingfix">
 					<ul>
-						<li> <a href="#">Quem Somo?</a> </li>					
+						<li> <a href="#">Quem Somos?</a> </li>					
 						<li> <a href="#">Links Úteis</a> </li>	
 						<li> <a href="#">Contatos</a> </li>	
 					</ul>
