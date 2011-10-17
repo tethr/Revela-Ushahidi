@@ -1,0 +1,441 @@
+/* 
+	[IconicFont] - Let's use Webfonts for icons
+---------------------------------------------------------------------------*/
+@font-face {
+	font-family: 'IconicStroke';
+	src: url('iconic_stroke-webfont.eot');
+	src: local('☺'), url('fonts/iconic_stroke-webfont.woff') format('woff'), url('fonts/iconic_stroke-webfont.ttf') format('truetype'), url('fonts/iconic_stroke-webfont.svg#webfontCqgzK5wS') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IconicStroke';
+	src: url('fonts/iconic_stroke-webfont.eot');
+	src: local('☺'), url('fonts/iconic_stroke-webfont.woff') format('woff'), url('fonts/iconic_stroke-webfont.ttf') format('truetype'), url('fonts/iconic_stroke-webfont.svg#webfontCqgzK5wS') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IconicStroke';
+	src: url('fonts/iconic_stroke-webfont.eot');
+	src: local('☺'), url('fonts/iconic_stroke-webfont.woff') format('woff'), url('fonts/iconic_stroke-webfont.ttf') format('truetype'), url('fonts/iconic_stroke-webfont.svg#webfontCqgzK5wS') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IconicStroke';
+	src: url('fonts/iconic_stroke-webfont.eot');
+	src: local('☺'), url('fonts/iconic_stroke-webfont.woff') format('woff'), url('fonts/iconic_stroke-webfont.ttf') format('truetype'), url('fonts/iconic_stroke-webfont.svg#webfontCqgzK5wS') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.iconic:before {
+	color:inherit;
+	font-family: "IconicStroke";
+}
+
+a.iconic:hover {
+	color:inherit;
+}
+
+.iconic.plus-alt:before { content: "="; }
+.iconic.minus-alt:before { content: "_"; }
+
+
+/* 
+	[Global Class - helpers]
+---------------------------------------------------------------------------*/
+.iw_nob{
+	margin:0;
+	padding:0;
+	list-style:none;
+	list-style-position:outside;
+}
+.iw_ar{float:right}
+.iw_al{float:left}
+
+/* 
+	[Infowindow-Wrap]
+---------------------------------------------------------------------------*/
+#iw{
+	padding:2px 0 0 5px;
+	min-height: 200px;
+	width: 400px;
+	position:relative;
+	}
+#iw.scrolling{overflow:hidden;}/* while things are animating */
+
+#iw:after{
+	content: " ";
+	position:absolute;
+	top:0;
+	height: 100%;width:2px;
+	background:#000;
+	opacity:.45;
+	border: 0 solid #aaa;
+	filter:alpha(opacity=45);
+	-webkit-box-shadow: 0 0 2px rgba(0,0,0,.85);
+	-moz-box-shadow: 0 0 2px rgba(0,0,0,.85);
+	-khtml-box-shadow: 0 0 2px rgba(0,0,0,.85);
+	-o-box-shadow: 0 0 2px rgba(0,0,0,.85);
+	box-shadow: 0 0 2px rgba(0,0,0,.85);
+	display:none;
+}
+#iw.scrolling:after{display:block;right:-2px;border-width: 0 1px 0 0}
+#iw.scrollingleft:after{left:-2px;border-width:0 0 0 1px;}
+
+#iw-placeholder{position:relative;}
+
+/* 
+	[Header]
+---------------------------------------------------------------------------*/
+.iw_hd{
+	position:relative;
+	margin:0;
+	padding-bottom:5px;
+	border-bottom: 1px solid #ddd;
+}
+	.iw_title{
+		font-size: 14px;
+		margin:0;
+		padding-right: 70px;
+	}
+		.iw_title a{}
+		.iw_title a:hover{text-transform: none;}
+
+	.r_verified,
+	.r_unverified{
+		position:absolute;
+		
+		width: 60px;
+		padding: 2px 3px;
+		top: 0; right: 5px;
+		font-size: 10px;
+		text-align:center;
+		text-transform: uppercase;
+		display: inline-block;
+		padding: 2px 3px;
+		color: white;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-khtml-border-radius: 3px;
+		-o-border-radius: 3px;
+		border-radius: 3px;
+		}
+
+	.iw_hd .r_verified{background:#368C00;}
+	.iw_hd .r_unverified{background:#A60003}
+	
+	
+
+/* 
+	[Categories]
+---------------------------------------------------------------------------*/
+#iw-categories{
+	clear:both;
+	border-top: 1px solid #fff;
+	background:#f9f9f9;
+	margin:0 0 5px;
+	padding:4px 5px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+	#iw-categories > li{
+		float:left;
+		display:inline;
+		margin: 0 5px 2px 0;
+	}
+	#iw-categories > li:last-child{margin-right:0;}
+	#iw-categories .iw_cat_title{font-size:13px;color:#333;margin:0;padding:0;}
+/* 
+	[Infowindow - Tabs]
+---------------------------------------------------------------------------*/
+
+#iw-tabs{padding:0;border:0;background:none;}
+
+
+
+#iw-tabs #iw-tabs-nav{
+	-moz-box-shadow: 0 4px 5px rgba(255,255,255,.85);
+	-webkit-box-shadow: 0 4px 5px rgba(255,255,255,.85);
+	-khtml-box-shadow: 0 4px 5px rgba(255,255,255,.85);
+	-o-box-shadow: 0 4px 5px rgba(255,255,255,.85);
+	box-shadow: 0 4px 5px rgba(255,255,255,.85);
+}
+
+#iw-tabs,
+#iw-tabs #iw-tabs-nav,
+#iw-tabs .iw_tab{
+	-moz-border-radius-bottomright: 0;
+	-moz-border-radius-bottomleft: 0;
+	
+	-khtml-border-radius-bottomright: 0;
+	-khtml-border-radius-bottomleft: 0;
+	
+	-webkit-border-bottom-left-radius:0;
+	-webkit-border-bottom-right-radius:0;
+	
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	
+}
+
+	#iw-tabs-nav > li > a{padding: 2px 3px;}
+	#iw-tabs .ui-tabs-panel{
+		
+		border: solid #aaa;
+		border-width: 0 1px 1px;
+		padding: 5px;
+	}
+	#iw-tabs .iw_tab{
+		height:100px;
+		overflow:auto;
+		overflow-x:hidden;
+		padding-top:4px;
+		}
+
+/* 
+	[Content]
+---------------------------------------------------------------------------*/
+.iw_details{padding-bottom: 10px;}
+	
+	/* Headings */
+	#iw-tabs .iw_media_title{
+		margin:5px 0 2px;
+		padding:0;
+		font-size: 12px;
+		clear:both;
+	}
+
+
+	/* Description */
+	#iw .ui_widget,
+	.iw_desc{font-size:12px;}
+	
+	.iw_desc{margin-bottom:5px}
+	
+
+
+
+
+/* 
+	[Media Tab Content]
+---------------------------------------------------------------------------*/
+/* Images */
+.iw_media_image{
+	float:left;
+	display:inline;
+	margin: 0 5px 10px 0;
+	clear:right;
+}
+
+.iw_media_image:last-child{margin-right:0;}
+
+.iw_media_image > a{
+	display:block;
+	vertical-align: top;
+	border: 1px solid #a8a8a8;
+	background:#fff;
+	padding: 2px;
+}
+
+/* Links */
+
+.iw_link_title:before{
+	font-family: "IconicStroke";
+	content: "/";
+	margin-right:5px;
+}
+
+.iw_links_list{margin-left:30px;}
+
+.iw_media_link{margin-bottom: 2px;}
+.iw_media_link > a{
+	color:#3764AA;
+	text-decoration:underline;
+	word-wrap:break-word;
+}
+.iw_media_link > a:hover{color:#008cff}
+.iw_media_link > a:visited{color:#7D3C3C}
+
+
+
+/* 
+	[Infowindow - Footer]
+---------------------------------------------------------------------------*/
+.iw_ft{
+	height:14px;
+	padding: 4px 0;
+	font-size: 10px;
+	color:#666;
+}
+.iw_meta > li{
+	float:left;
+	display:inline;
+	margin-right:5px;
+	padding: 4px 0;
+}
+.iw_meta .iw_loc,
+.iw_meta .iw_date{padding-left: 18px;}
+
+.iw_meta .iw_date{margin-right:0;}
+
+
+/* 
+	[Meta footer - lat lon placeholder]
+---------------------------------------------------------------------------*/
+#iw-ft-meta{
+	border: 1px solid #a8a8a8;
+	background:#eee;
+	color:#666;
+	height: 20px;
+	line-height: 20px;
+	padding: 2px 5px;
+	margin: 2px 0;
+	}
+
+#iw_coord > li{
+	float:left;
+	display:inline;
+	margin-right:10px;
+}
+
+#iw_coord #iw-lat{margin:0;}
+#iw_coord #iw-lon:after{content:","}
+
+
+#pagination-wrap{
+	clear:both;
+	height: 20px;
+	margin: 5px 0;
+	padding: 0 5px;
+}
+
+.pagination {
+	font-size: 10px;
+}
+        
+.pagination a {
+    text-decoration: none;
+	border: solid 1px #AAE;
+	color: #15B;
+}
+
+.pagination a, 
+.pagination span {
+    display: block;
+    float: left;
+    padding: 2px 3px;
+    margin-right: 5px;
+	margin-bottom: 5px;
+	min-width:10px;
+	text-align:center;
+}
+.pagination .next{margin-right:0;}
+.pagination a:hover{
+	background:#f90;
+}
+.pagination .current {
+    background: #26B;
+    color: #fff;
+	border: solid 1px #AAE;
+}
+.pagination .current.prev, .pagination .current.next{
+	color:#999;
+	border-color:#999;
+	background:#fff;
+}
+
+
+/* 
+	[Color Box]
+---------------------------------------------------------------------------*/
+
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:url(../../media/images/colorbox/overlay.png) repeat 0 0;}
+#colorbox{}
+    #cboxTopLeft{width:21px; height:21px; background:url(../../media/images/colorbox/controls.png) no-repeat -100px 0;}
+    #cboxTopRight{width:21px; height:21px; background:url(../../media/images/colorbox/controls.png) no-repeat -129px 0;}
+    #cboxBottomLeft{width:21px; height:21px; background:url(../../media/images/colorbox/controls.png) no-repeat -100px -29px;}
+    #cboxBottomRight{width:21px; height:21px; background:url(../../media/images/colorbox/controls.png) no-repeat -129px -29px;}
+    #cboxMiddleLeft{width:21px; background:url(../../media/images/colorbox/controls.png) left top repeat-y;}
+    #cboxMiddleRight{width:21px; background:url(../../media/images/colorbox/controls.png) right top repeat-y;}
+    #cboxTopCenter{height:21px; background:url(../../media/images/colorbox/border.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:21px; background:url(../../media/images/colorbox/border.png) 0 -29px repeat-x;}
+    #cboxContent{background:#fff; overflow:hidden;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:28px;}
+        #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+        #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cboxPrevious{position:absolute; bottom:0; left:0; background:url(../../media/images/colorbox/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxPrevious.hover{background-position:-75px -25px;}
+        #cboxNext{position:absolute; bottom:0; left:27px; background:url(../../media/images/colorbox/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxNext.hover{background-position:-50px -25px;}
+        #cboxLoadingOverlay{background:url(../../media/images/colorbox/loading_background.png) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(../../media/images/colorbox/loading.gif) no-repeat center center;}
+        #cboxClose{position:absolute; bottom:0; right:0; background:url(../../media/images/colorbox/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxClose.hover{background-position:-25px -25px;}
+
+/*
+  The following fixes a problem where IE7+ replaces a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+/*
+  The following provides PNG transparency support for IE6
+*/
+.cboxIE6 #cboxTopLeft{background:url(../../media/images/colorbox/ie6/borderTopLeft.png);}
+.cboxIE6 #cboxTopCenter{background:url(../../media/images/colorbox/ie6/borderTopCenter.png);}
+.cboxIE6 #cboxTopRight{background:url(../../media/images/colorbox/ie6/borderTopRight.png);}
+.cboxIE6 #cboxBottomLeft{background:url(../../media/images/colorbox/ie6/borderBottomLeft.png);}
+.cboxIE6 #cboxBottomCenter{background:url(../../media/images/colorbox/ie6/borderBottomCenter.png);}
+.cboxIE6 #cboxBottomRight{background:url(../../media/images/colorbox/ie6/borderBottomRight.png);}
+.cboxIE6 #cboxMiddleLeft{background:url(../../media/images/colorbox/ie6/borderMiddleLeft.png);}
+.cboxIE6 #cboxMiddleRight{background:url(../../media/images/colorbox/ie6/borderMiddleRight.png);}
+
+.cboxIE6 #cboxTopLeft,
+.cboxIE6 #cboxTopCenter,
+.cboxIE6 #cboxTopRight,
+.cboxIE6 #cboxBottomLeft,
+.cboxIE6 #cboxBottomCenter,
+.cboxIE6 #cboxBottomRight,
+.cboxIE6 #cboxMiddleLeft,
+.cboxIE6 #cboxMiddleRight {
+    _behavior: expression(this.src = this.src ? this.src : this.currentStyle.backgroundImage.split('"')[1], this.style.background = "none", this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" + this.src + ", sizingMethod='scale')");
+}
+
+
