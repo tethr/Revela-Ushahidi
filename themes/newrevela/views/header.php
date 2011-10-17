@@ -1,4 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php 
+  
+    $tubepress_base_url = "http://revela.dev.tethr.org/tubepress_pro_2_2_9/";
+  
+    include "/opt/Revela-Ushahidi/tubepress_pro_2_2_9/sys/classes/TubePressPro.class.php";
+?>
+
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 	<title><?php echo $site_name; ?></title>
@@ -8,11 +15,12 @@
 	// Action::header_scripts - Additional Inline Scripts from Plugins
 	Event::run('ushahidi_action.header_scripts');
 	?>
-			<link href="flickrstyle.css" rel="stylesheet" type="text/css" media="all" /> 
-<!-- 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
-		<script src="scripts/cycle/jquery.cycle.all.min.js"></script>
-		<script src="scripts/jflickrfeed.min.js"></script>
-		<script src="scripts/setup.js"></script>
+
+		
+		
+		<script type='text/javascript' src='http://revela.dev.tethr.org/tubepress_pro_2_2_9/sys/ui/static/js/tubepress.js'></script>
+<link rel='stylesheet' href='http://revela.dev.tethr.org/tubepress_pro_2_2_9/sys/ui/themes/default/style.css' type='text/css' />
+<script type="text/javascript">function getTubePressBaseUrl(){return "http://revela.dev.tethr.org/tubepress_pro_2_2_9";}</script>
 </head>
 
 <body id="page">

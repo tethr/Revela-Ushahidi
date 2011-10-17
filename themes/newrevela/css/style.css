@@ -284,7 +284,6 @@ height:55px;
 
 
 
-
 #adminmap_map_embedd, .bigmapbutton, .mapStatus
 {
 display:none !important;
@@ -582,7 +581,7 @@ float:left;
 
 #legaltext
 {
-margin-top: 5px;
+margin-top: 15px;
 background:  url(../images/footer3.jpg) no-repeat;
 height:40px;
 padding: 10px;
@@ -622,11 +621,92 @@ z-index:12;
 #gallerywrapper
 {
 position:relative;
-top:45px;
-border:2px #fff dashed;
-height:260px;
+top:10px;
 padding:10px;
 }
+
+
+
+#artemenu
+{
+display:block;
+background: url("http://revela.dev.tethr.org/themes/newrevela/css/../images/gallerymenubg.png") top left no-repeat;
+width:191px;
+height:18px;
+z-index: 9000;
+position: absolute;
+margin-top: 79px;
+left:735px;
+padding:0px;
+padding-left:5px
+
+}	
+
+
+div#artemenu ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+div#artemenu li{
+    float: left;
+    display: block;
+    margin-right: 1px;
+
+border-width:0px;
+border-style:solid;
+border-top:0px;
+border-bottom:0px;
+border-right:0px;
+height:14px;
+border-color:#999;
+padding-left:10px;
+padding-right:5px;
+padding-top:0px;
+
+/*
+background: #ccc;
+-webkit-border-bottom-right-radius: 7px;
+-webkit-border-bottom-left-radius: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-bottomleft: 7px;
+border-bottom-right-radius: 7px;
+border-bottom-left-radius: 7px;
+
+
+height:20px;*/
+}
+div#artemenu li:last-child{
+border-right: #999 0px solid;
+
+}
+
+
+div#artemenu a{
+    display: block;
+    position: relative;
+    padding: 0px 6px;
+    color: #999;
+    overflow: hidden;
+text-transform: uppercase;
+    font-weight: bold;
+    font-size: 100%;
+border-left: 2px #999 solid;
+border-right: 2px #999 solid;
+
+}
+
+div#artemenu a:hover, div#artemenu a.active{
+    text-decoration: none;
+    background: none /*#2E8AB8*/ ;
+color:#000;
+}
+
+
+
+
+
 
    
   div#gallerymenu{
@@ -745,7 +825,9 @@ display:none;
 margin-left: 55px !important;
 }
 
-
+  .twtr-ft img
+  {
+  display: none;}
 
 #videoswrapper
 {
@@ -789,6 +871,30 @@ width:200px;
 background:none;
 margin-top:30px;
 }
+
+.tubepress_thumbs
+{
+width: 600px !important;
+}
+.tubepress_thumb
+{
+float:left;
+width:120px !important;
+display:block;
+height: 70px;
+}
+
+.tubepress_meta_group
+{display:none;
+}
+
+.peterswarpper
+{
+height:110px;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  width:350px;
+  }
 /********************************************/
 /* END 
 peter : to build a lot of sidebar stuff */
@@ -3247,3 +3353,6 @@ a.filter-button:hover { text-decoration:none; background:#707070;  }
     padding:5px;
     margin:0px 5px;
 }
+
+
+

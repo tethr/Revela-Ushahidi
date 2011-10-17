@@ -366,7 +366,12 @@ Antes de se preocupar com o mundo, preocupe se com si mesmo.Se a quest‹o Ž a fom
 							<div id="videoswrapper">
 							<div id="videoplayer">
 					
-<iframe src="http://player.vimeo.com/video/30072405?title=0&amp;byline=0&amp;portrait=0" width="350" height="240" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+<!-- <iframe src="http://player.vimeo.com/video/30072405?title=0&amp;byline=0&amp;portrait=0" width="350" height="240" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe> -->
+
+
+
+
+<?php print TubePressPro::getHtmlForShortcode('mode="vimeoUploadedBy" vimeoUploadedByValue="user8703154" embeddedWidth="350"  embeddedHeight="200" vimeoKey="218b52de9297d15c7ad833b97779b29b" vimeoSecret="cb9f8aa02471138d"'); ?>
 					</div>
 					
 					
@@ -424,15 +429,26 @@ new TWTR.Widget({
 					
 					
 		<div id="gallerycontainer">
-					
+
+<div id="gallerywrapper">				
 					
 <!-- <ul id="cycle"></ul> -->
 
 <?php
 			// Action::main_sidebar - Add Items to the Entry Page Sidebar
-			Event::run('ushahidi_action.main_sidebar');
+			//Event::run('ushahidi_action.main_sidebar');
 			?>
-
+			<div id="artemenu"> 
+					<ul>
+						<li> <a href="#">Galeria</a> </li>					
+						<li> <a href="#">Participe</a> </li>	
+					</ul>
+			</div> <!-- end galmenu div -->
+			
+			<iframe src="/blog/?page_id=31" width="100%" height="400" frameborder="0" scrolling="no">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>	<!-- end gallery wraper -->
 </div>
 
 </div>
