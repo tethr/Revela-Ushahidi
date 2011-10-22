@@ -21,6 +21,10 @@
 		<script type='text/javascript' src='http://revela.dev.tethr.org/tubepress_pro_2_2_9/sys/ui/static/js/tubepress.js'></script>
 <link rel='stylesheet' href='http://revela.dev.tethr.org/tubepress_pro_2_2_9/sys/ui/themes/default/style.css' type='text/css' />
 <script type="text/javascript">function getTubePressBaseUrl(){return "http://revela.dev.tethr.org/tubepress_pro_2_2_9";}</script>
+
+<script src="/scripts/jquery.tools.min.js"></script>
+
+
 </head>
 
 <body id="page">
@@ -41,9 +45,9 @@
 
 	<div id="socialicons">
 			<ul class="socialicons">
-			<li> <a href="#"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_fb.png"></a></li>
-			<li> <a href="#"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_tw.png"></a></li>
-			<li> <a href="#"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_or.png"></a></li>
+			<li> <a href="http://www.facebook.com/pages/Revela/217569061637691" target="_blank"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_fb.png"></a></li>
+			<li> <a href="http://twitter.com/#!/search/revela" target="_blank"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_tw.png"></a></li>
+			<li> <a href="http://www.orkut.com.br/Community?rl=cpp&cmm=118347909"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_or.png"></a></li>
 
 			</ul>
 		</div>
@@ -69,7 +73,7 @@
 			<?php if($banner == NULL){ ?>
 			<div id="logo">
 			<!-- Peter: fix to make header logo linkable -->
-			<a href="#" class="logolink">&nbsp;</a>
+			<a href="/" class="logolink">&nbsp;</a>
 			
 				<h1><a href="<?php echo url::site();?>"><?php echo $site_name; ?></a></h1>
 				<span><?php echo $site_tagline; ?></span>
@@ -110,9 +114,9 @@
 			
 			<div id="logomenu" class="clearingfix">
 					<ul>
-						<li> <a href="#">Quem Somos?</a> </li>					
-						<li> <a href="#">Links Úteis</a> </li>	
-						<li> <a href="#">Contatos</a> </li>	
+						<li> <a href="/blog/?page_id=59">Quem Somos?</a> </li>					
+						<li> <a href="/blog/?page_id=67">Links Úteis</a> </li>	
+<!-- 						<li> <a href="#">Contatos</a> </li>	 -->
 					</ul>
 			</div> <!-- end logo menu -->
 			

@@ -33,6 +33,17 @@
 
 		<div id="threeclicks">
 
+<script>
+$(document).ready(function() {
+
+/* $("#demo img[title]").tooltip(); */
+
+$(function() {
+  $('.has_tooltip').tooltip({ position: "top center", offset: [-20, 0], relative: true  });
+});
+
+
+}); </script>
 
 
 
@@ -41,44 +52,26 @@
 			<h4><a href="/blog/?page_id=70">Como participar &raquo;</a></h4>
  			<h4>Revela em 3 cliques!</h4> 
  			
-<div id="threeclicknums">
+
 	
-<!-- <div class="threeclicksred"><img src="http://revela.dev.tethr.org/themes/newrevela/images/123-new.png"></div> -->
+<div class="threeclicksred"><img src="http://revela.dev.tethr.org/themes/newrevela/images/123-new.png"></div>
 
 			<ul>
-			<li class="veja has_tooltip" title="<strong>Veja</strong><br><br>Registre tudo aquilo que você considera que vai tornar nosso planeta um lugar
-melhor de morar. Viu alguém fazendo algo de errado? Destruiu, sujou ou
+			<li class="veja has_tooltip" title="Registre tudo aquilo que voc� considera que vai tornar nosso planeta um lugar
+melhor de morar. Viu algu�m fazendo algo de errado? Destruiu, sujou ou
 queimou? Revela!
-<br><br>
-Ou soube de uma ótima de idéia de um grupo de amigos, vizinhos, empresa , enfim,
-algo que você acha que deveria ser divulgado de tão bacana que é? Revela
-também!
-<br><br>
-Cuide do seu país, ajude a construir uma rede de informações da real situação de
-nosso meio ambiente. Cadastre no mapa colaborativo todas as informações que você
-tiver."> <img src="/themes/newrevela/images/num1.png"><a href="#">Veja</a></li>
-			<li class="revele has_tooltip" title="<strong>Envie</strong><br><br>
-			1. <a href='/reports/submit'>Preencha este formulário</a>
-			<br>
-2. Mande um SMS para o número: xx 91 9226-5118. Escreva se é uma denúncia
-ou ação positiva e descreva o que está acontecendo. Coloque o endereço( rua,
-cidade, CEP se souber) ou <a href='http://educacao.uol.com.br/geografia/coordenadas-geograficas-latitude-longitude-e-gps.jhtm'>Coordenadas geógraficas</a>. Assine, se quiser, e envie.
 <br>
-3. Aplicativos para Android e iPhone: Visite o site <a href='http://www.revela.org.br'>www.revela.org.br</a> a partir de
-seu smartphone para baixá-los."><img src="/themes/newrevela/images/num2.png"><a href="#">Revele</a></li>
-			<li class="esclareca has_tooltip" title="<strong>Transforme</strong><br><br>
-As informações que você e todas as pessoas cadastram no mapa tornam-se
-disponíveis para organizações não governamentais e instituições que protegem a
-natureza, para o poder público, imprensa, enfim, a todos.
-<br><br>
-Com elas poderão ser feitas investigações sobre as denúncias, verificar o que está de
-fato acontecendo.
-<br><br>
-Já as boas ações poderão ser divulgadas, seguidas, transformadas. Ou seja – podem
-se transformar em exemplos para todos nós."><img src="/themes/newrevela/images/num3.png"> <a href="#">Esclareca</a></li>
+Ou soube de uma �tima de id�ia de um grupo de amigos, vizinhos, empresa , enfim,
+algo que voc� acha que deveria ser divulgado de t�o bacana que �? Revela
+tamb�m!
+<br>
+Cuide do seu pa�s, ajude a construir uma rede de informa��es da real situa��o de
+nosso meio ambiente. Cadastre no mapa colaborativo todas as informa��es que voc�
+tiver."> <a href="#">Veja</a></li>
+			<li class="revele has_tooltip" title="some stuff"> <a href="#">Revele</a></li>
+			<li class="esclareca has_tooltip" title="some stuff"> <a href="#">Esclareca</a></li>
 
 			</ul>
-			</div>
 		</div>
 
 			
@@ -211,10 +204,10 @@ se transformar em exemplos para todos nós."><img src="/themes/newrevela/images/
 	<!--
 	<div id="florestral">
 			
-			<h4>Votação dia 20 de outubro.</h4>
+			<h4>Vota��o dia 20 de outubro.</h4>
 			<div class="florestralwidget">
 			
-Antes de se preocupar com o mundo, preocupe se com si mesmo.Se a questão é a fome, parem de exportar e negociem com a população faminta do Brasil. Plenário esta dividido.
+Antes de se preocupar com o mundo, preocupe se com si mesmo.Se a quest�o � a fome, parem de exportar e negociem com a popula��o faminta do Brasil. Plen�rio esta dividido.
 			</div>
 			
 		</div>
@@ -425,7 +418,7 @@ Antes de se preocupar com o mundo, preocupe se com si mesmo.Se a questão é a f
 new TWTR.Widget({
   version: 2,
   type: 'search',
-  search: '#revela OR \"CÛdigo Florestal\"',
+  search: '#revela OR \"C�digo Florestal\"',
   interval: 30000,
   title: 'Tweets Revela',
   subject: '',
@@ -478,7 +471,7 @@ new TWTR.Widget({
 			?>
 			<div id="artemenu"> 
 					<ul>
-						<li> <a href="/blog/?page_id=56">Galeria</a> </li>					
+						<li> <a href="#">Galeria</a> </li>					
 						<li> <a href="#">Participe</a> </li>	
 					</ul>
 			</div> <!-- end galmenu div -->
@@ -497,7 +490,7 @@ new TWTR.Widget({
 	
 
 				<div id="legaltext">
-Texto Legal - Política de Privacidade
+Texto Legal - Pol�tica de Privacidade
 				</div> <!-- end legal text -->
 
 <span class="patrons"><img src="http://revela.dev.tethr.org/themes/newrevela/images/patrons1.jpg"></span>

@@ -314,7 +314,7 @@ display:block;
 {
 margin-top:40px;
 margin-left:0px;
-background:  url("http://revela.dev.tethr.org/themes/newrevela/css/../images/socialarrow.png") bottom left no-repeat;
+background:  url("../images/socialarrow.png") bottom left no-repeat;
 padding-left: 110px;
 }
 .socialicons li
@@ -336,6 +336,50 @@ float:left;
  }
 
 
+
+
+/* tooltip styling. by default the element to be styled is .tooltip  */
+.tooltip {
+	display:none;
+	background: #ccffcc;
+	font-size:12px;
+
+min-height:54px;
+	width:330px;
+
+	padding:25px;
+	color:#000;	
+	
+	-webkit-border-radius: 14px;
+-moz-border-radius: 14px;
+border-radius: 14px;
+
+-webkit-box-shadow: 3px 3px 9px 3px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 3px 3px 9px 3px rgba(0, 0, 0, 0.3);
+box-shadow: 3px 3px 9px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+ #threeclicknums 
+   {margin-top:25px;
+	}
+
+   #threeclicknums img
+   	{
+  	 position: relative;
+	top:-20px;
+	margin-left:10px
+s	}
+ #threeclicknums a
+   	{
+  	 position: relative;
+	top:-30px;
+	margin-top:10px
+	}
+
+
+
+
 #threeclicks h4
 {
     font-family: grotzechdcnlight;
@@ -344,19 +388,11 @@ float:left;
     margin:0px !important;
 
 }
-
-.threeclicks
-{
-
-}
-   
-
-   
    #threeclicks{
     background: none /* #C2C2C2 */;
     border: #FFF 0px solid;
     padding: 0px 0px;
-margin-top:5px;
+margin-top:15px;
 margin-left: 0px;
 text-align: center;
 }
@@ -1065,7 +1101,7 @@ div#mainmenu{
     padding: 0px 10px;
 position:absolute;
 top:150px;
-margin-left:40px
+margin-left:20px
 }
 
 div#mainmenu ul{
@@ -1324,7 +1360,7 @@ height:775px;
 {
 position:relative;
 height:662px;
-top:130px;
+top:140px;
 }
 
 #kml_switch

@@ -58,5 +58,18 @@
 	// Action::main_footer - Add items before the </body> tag
 	Event::run('ushahidi_action.main_footer');
 	?>
+	
+	
+<script>
+$(document).ready(function() {
+
+/* $("#demo img[title]").tooltip(); */
+
+$(function() {
+  $('.has_tooltip').tooltip({ position: "top center", offset: [-30, 0], relative: true  });
+});
+
+
+}); </script>
 </body>
 </html>
