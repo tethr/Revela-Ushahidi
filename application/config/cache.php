@@ -8,11 +8,11 @@
  * Enable or disable file caching. This makes pages display faster
  * but can take a large amount of storage space on larger sites
  */
-$config['cache_pages'] = FALSE;
+$config['cache_pages'] = TRUE;
 
 if (@!is_writable(APPPATH.'cache'))
 {
-	$config["cache_pages"] = FALSE;
+	$config["cache_pages"] = TRUE;
 }
 
 /**
@@ -24,7 +24,7 @@ if (@!is_writable(APPPATH.'cache'))
  *  -> Xcache
  */
 $config['default'] = array(
-	'driver' => 'file',
+	'driver' => 'Xcache',
 	'params' => APPPATH.'cache',
 	'lifetime' => 1800,
 	'requests' => -1

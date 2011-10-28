@@ -124,6 +124,7 @@ class Main_Controller extends Template_Controller {
 		$this->template->header->site_name_style = $site_name_style;
 		$this->template->header->site_tagline = Kohana::config('settings.site_tagline');
 
+   
 		$this->template->header->this_page = "";
 
 		// Google Analytics
@@ -165,6 +166,7 @@ class Main_Controller extends Template_Controller {
 
     public function index()
     {
+    
         $this->template->header->this_page = 'home';
         $this->template->content = new View('main');
 

@@ -15,10 +15,8 @@
 	// Action::header_scripts - Additional Inline Scripts from Plugins
 	Event::run('ushahidi_action.header_scripts');
 	?>
-
-		
-		
-		<script type='text/javascript' src='http://revela.dev.tethr.org/tubepress_pro_2_2_9/sys/ui/static/js/tubepress.js'></script>
+    
+<script type='text/javascript' src='http://revela.dev.tethr.org/tubepress_pro_2_2_9/sys/ui/static/js/tubepress.js'></script>
 <link rel='stylesheet' href='http://revela.dev.tethr.org/tubepress_pro_2_2_9/sys/ui/themes/default/style.css' type='text/css' />
 <script type="text/javascript">function getTubePressBaseUrl(){return "http://revela.dev.tethr.org/tubepress_pro_2_2_9";}</script>
 
@@ -116,7 +114,7 @@
 					<ul>
 						<li> <a href="/blog/?page_id=59">Quem Somos?</a> </li>					
 						<li> <a href="/blog/?page_id=67">Links Úteis</a> </li>	
-<!-- 						<li> <a href="#">Contatos</a> </li>	 -->
+						<li> <a href="/blog/?page_id=91">Contatos</a> </li>	 
 					</ul>
 			</div> <!-- end logo menu -->
 			
