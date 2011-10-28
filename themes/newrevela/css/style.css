@@ -1099,8 +1099,10 @@ div#mainmenu{
     background: none /* #C2C2C2 */;
     border: #FFF 0px solid;
     padding: 0px 10px;
+/*
 position:absolute;
 top:150px;
+*/
 margin-left:60px
 }
 
