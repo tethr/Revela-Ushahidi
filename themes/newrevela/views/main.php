@@ -65,7 +65,7 @@ ou ação positiva e descreva o que está acontecendo. Coloque o endereço( rua,
 cidade, CEP se souber) ou <a href='http://educacao.uol.com.br/geografia/coordenadas-geograficas-latitude-longitude-e-gps.jhtm'>Coordenadas geógraficas</a>. Assine, se quiser, e envie.
 <br>
 3. Aplicativos para Android e iPhone: Visite o site <a href='http://www.revela.org.br'>www.revela.org.br</a> a partir de
-seu smartphone para baixá-los."><img src="/themes/newrevela/images/num2.png"><a href="#">Revele</a></li>
+seu smartphone para baixá-los."><img src="/themes/newrevela/images/num2.png"><a href="#">Envie</a></li>
 			<li class="esclareca has_tooltip" title="<strong>Transforme</strong><br><br>
 As informações que você e todas as pessoas cadastram no mapa tornam-se
 disponíveis para organizações não governamentais e instituições que protegem a
@@ -75,7 +75,7 @@ Com elas poderão ser feitas investigações sobre as denúncias, verificar o qu
 fato acontecendo.
 <br><br>
 Já as boas ações poderão ser divulgadas, seguidas, transformadas. Ou seja – podem
-se transformar em exemplos para todos nós."><img src="/themes/newrevela/images/num3.png"> <a href="#">Esclareca</a></li>
+se transformar em exemplos para todos nós."><img src="/themes/newrevela/images/num3.png"> <a href="#">Transforme</a></li>
 
 			</ul>
 			</div>
@@ -425,7 +425,7 @@ Antes de se preocupar com o mundo, preocupe se com si mesmo.Se a questão é a f
 new TWTR.Widget({
   version: 2,
   type: 'search',
-  search: '#revela OR \"CÛdigo Florestal\"',
+  search: '#PortalRevela OR \"CÛdigo Florestal\"',
   interval: 30000,
   title: 'Tweets Revela',
   subject: '',
@@ -468,7 +468,7 @@ new TWTR.Widget({
 					
 		<div id="gallerycontainer">
 
-<div id="gallerywrapper">				
+<div id="gallerywrapperusha">				
 					
 <!-- <ul id="cycle"></ul> -->
 
@@ -498,6 +498,10 @@ new TWTR.Widget({
 
 				<div id="legaltext">
 Texto Legal - Política de Privacidade
+
+
+			<a href="http://ushahidid.com" class="footerushahidilink" target="_blank>">&nbsp;</a>
+
 				</div> <!-- end legal text -->
 
 <span class="patrons"><img src="http://revela.dev.tethr.org/themes/newrevela/images/patrons1.jpg"></span>

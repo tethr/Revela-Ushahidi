@@ -159,6 +159,16 @@ height:142px;
 display:block;
 }
 
+.footerushahidilink
+{
+width:148px;
+height:42px;
+display:block;
+position: absolute;
+right: 20px;
+top: 0px;
+}
+
 div#logo{
     border: 0;
 /*     background: #E2E2E2; */
@@ -613,6 +623,7 @@ width:295px;
 padding:0px;
 background:  url(../images/noticias2.png) no-repeat;
 float:left;
+font-family: helvetica, sans-serif;
 }
 
 #legaltext
@@ -623,6 +634,7 @@ height:40px;
 padding: 10px;
 text-align:center;
 color: #999;
+position: relative;
 
 }
 
@@ -654,7 +666,7 @@ z-index:12;
 
 }
 
-#gallerywrapper
+#gallerywrapperusha
 {
 position:relative;
 top:10px;
@@ -828,6 +840,8 @@ margin-top:30px;
 padding: 3px !important;
 text-align:center;
 color:#888;
+position: relative;
+top: 34px;
 }
 
 

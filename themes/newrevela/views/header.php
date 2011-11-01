@@ -58,7 +58,11 @@
 			</ul>
 		</div>
 		
-		
+		<div id="sms">
+			SMS: xx 91 9226 5118
+			</div>
+			
+			
 			</div>
 			<!-- / searchbox -->
 			
@@ -71,7 +75,7 @@
 			<?php if($banner == NULL){ ?>
 			<div id="logo">
 			<!-- Peter: fix to make header logo linkable -->
-			<a href="/" class="logolink">&nbsp;</a>
+			<a href="/" class="v">&nbsp;</a>
 			
 				<h1><a href="<?php echo url::site();?>"><?php echo $site_name; ?></a></h1>
 				<span><?php echo $site_tagline; ?></span>
@@ -112,7 +116,7 @@
 			
 			<div id="logomenu" class="clearingfix">
 					<ul>
-						<li> <a href="/blog/?page_id=59">Quem Somos?</a> </li>					
+						<li> <a href="/blog/?page_id=59">Quem Somos</a> </li>					
 						<li> <a href="/blog/?page_id=67">Links Úteis</a> </li>	
 						<li> <a href="/blog/?page_id=91">Contatos</a> </li>	 
 					</ul>
@@ -121,9 +125,7 @@
 			<div id="slogan">
 			A sua plataforma</br> de ativismo digital.
 			
-			<div id="sms">
-			SMS: xx 91 9226 5118
-			</div>
+			
 			</div>
 
 		</div>
