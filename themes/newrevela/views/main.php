@@ -425,7 +425,7 @@ Antes de se preocupar com o mundo, preocupe se com si mesmo.Se a questão é a f
 new TWTR.Widget({
   version: 2,
   type: 'search',
-  search: '#PortalRevela OR \"CÛdigo Florestal\"',
+  search: '#revela OR \"CÛdigo Florestal\"',
   interval: 30000,
   title: 'Tweets Revela',
   subject: '',
@@ -468,28 +468,27 @@ new TWTR.Widget({
 					
 		<div id="gallerycontainer">
 
-<div id="gallerywrapperusha">				
-					
-<!-- <ul id="cycle"></ul> -->
-
-<?php
-			// Action::main_sidebar - Add Items to the Entry Page Sidebar
-			//Event::run('ushahidi_action.main_sidebar');
-			?>
-			<div id="artemenu"> 
-					<ul>
-						<li> <a href="/blog/?page_id=56">Galeria</a> </li>					
-						<li> <a href="#">Participe</a> </li>	
-					</ul>
-			</div> <!-- end galmenu div -->
+			<div id="gallerywrapperusha">				
+								
+			<!-- <ul id="cycle"></ul> -->
 			
-			<iframe src="/blog/?page_id=31" width="100%" height="400" frameborder="0" scrolling="no">
-  <p>Your browser does not support iframes.</p>
-</iframe>
-</div>	<!-- end gallery wraper -->
-</div>
+						<?php
+						// Action::main_sidebar - Add Items to the Entry Page Sidebar
+						//Event::run('ushahidi_action.main_sidebar');
+						?>
+						<div id="artemenu"> 
+								<ul>
+									<li> <a href="/blog/?page_id=56">Galeria</a> </li>					
+									<li> <a href="/blog/?page_id=121">Participe</a> </li>	
+								</ul>
+						</div> <!-- end galmenu div -->
+						
+						<iframe src="/blog/?page_id=31" width="100%" height="400" frameborder="0" scrolling="no">
+			  				<p>Your browser does not support iframes.</p>
+						</iframe>
+			</div>	<!-- end gallery wraper -->
+		</div>
 
-</div>
 
 
 
@@ -500,7 +499,7 @@ new TWTR.Widget({
 Texto Legal - Política de Privacidade
 
 
-			<a href="http://ushahidid.com" class="footerushahidilink" target="_blank>">&nbsp;</a>
+			<a href="http://ushahidi.com" class="footerushahidilink" target="_blank>">&nbsp;</a>
 
 				</div> <!-- end legal text -->
 

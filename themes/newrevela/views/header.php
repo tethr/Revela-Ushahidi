@@ -123,7 +123,7 @@
 			</div> <!-- end logo menu -->
 			
 			<div id="slogan">
-			A sua plataforma</br> de ativismo digital.
+			<span class="slogg">A sua plataforma</br> de ativismo digital.</span>
 			
 			
 			</div>
