@@ -76,7 +76,7 @@
 			</div>
 			
 			
-			<img src="http://revela.dev.tethr.org/themes/newrevela/images/apoios.gif">
+			<img src="http://www.revela.org.br/themes/newrevela/images/apoios.gif">
 			
 			</br>
 			Powered by the Ushahidi Platform

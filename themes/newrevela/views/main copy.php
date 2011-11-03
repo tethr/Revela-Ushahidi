@@ -21,15 +21,15 @@
 	<!--
 	<div id="socialicons">
 			<ul class="socialicons">
-			<li> <a href="#"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_fb.png"></a></li>
-			<li> <a href="#"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_tw.png"></a></li>
-			<li> <a href="#"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_go.png"></a></li>
-			<li> <a href="#"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_or.png"></a></li>
+			<li> <a href="#"><img src="http://www.revela.org.br/themes/newrevela/images/social_fb.png"></a></li>
+			<li> <a href="#"><img src="http://www.revela.org.br/themes/newrevela/images/social_tw.png"></a></li>
+			<li> <a href="#"><img src="http://www.revela.org.br/themes/newrevela/images/social_go.png"></a></li>
+			<li> <a href="#"><img src="http://www.revela.org.br/themes/newrevela/images/social_or.png"></a></li>
 
 			</ul>
 		</div>
 -->
-								<a href="/reports/submit"><img src="http://revela.dev.tethr.org/themes/newrevela/images/revalabutton.png" class="bigrevelabutton"> </a>
+								<a href="/reports/submit"><img src="http://www.revela.org.br/themes/newrevela/images/revalabutton.png" class="bigrevelabutton"> </a>
 
 		<div id="threeclicks">
 
@@ -54,7 +54,7 @@ $(function() {
  			
 
 	
-<div class="threeclicksred"><img src="http://revela.dev.tethr.org/themes/newrevela/images/123-new.png"></div>
+<div class="threeclicksred"><img src="http://www.revela.org.br/themes/newrevela/images/123-new.png"></div>
 
 			<ul>
 			<li class="veja has_tooltip" title="Registre tudo aquilo que voc considera que vai tornar nosso planeta um lugar
@@ -493,7 +493,7 @@ new TWTR.Widget({
 Texto Legal - Pol’tica de Privacidade
 				</div> <!-- end legal text -->
 
-<span class="patrons"><img src="http://revela.dev.tethr.org/themes/newrevela/images/patrons1.jpg"></span>
+<span class="patrons"><img src="http://www.revela.org.br/themes/newrevela/images/patrons1.jpg"></span>
 </div> <!-- end foot content -->
 
 

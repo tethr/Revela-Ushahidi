@@ -500,7 +500,7 @@ padding:5px;
 margin-top:366px;
 margin-left: 0px;
 text-align: center;
-    background:  url("http://revela.dev.tethr.org/themes/newrevela/css/../images/poststweeterbg.png") no-repeat;
+    background:  url("http://www.revela.org.br/themes/newrevela/css/../images/poststweeterbg.png") no-repeat;
 height:704px;
 position:relative;
 z-index:12;
@@ -609,7 +609,7 @@ padding:10px;
 margin-top:65px;
 margin-left: 10px;
 text-align: center;
-    background: url("http://revela.dev.tethr.org/themes/newrevela/css/../images/gallerymenubg.png")bottom no-repeat;
+    background: url("http://www.revela.org.br/themes/newrevela/css/../images/gallerymenubg.png")bottom no-repeat;
 height:18px;
 
 }
@@ -806,7 +806,7 @@ div.submit-incident{
 div.submit-incident a, div.submit-incident a:hover{
     padding: 8px 10px 8px 35px;
     background-color: #368C00;
-    background-image: url("http://revela.dev.tethr.org/themes/newrevela/css/../images/submit-incident.png");
+    background-image: url("http://www.revela.org.br/themes/newrevela/css/../images/submit-incident.png");
     background-position:10px 8px;
     background-repeat:no-repeat;
     color: #FFF;

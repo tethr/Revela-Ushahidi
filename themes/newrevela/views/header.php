@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php 
   
-    $tubepress_base_url = "http://revela.dev.tethr.org/tubepress_pro_2_2_9/";
+    $tubepress_base_url = "http://www.revela.org.br/tubepress_pro_2_2_9/";
   
     include "/opt/Revela-Ushahidi/tubepress_pro_2_2_9/sys/classes/TubePressPro.class.php";
 ?>
@@ -16,9 +16,9 @@
 	Event::run('ushahidi_action.header_scripts');
 	?>
     
-<script type='text/javascript' src='http://revela.dev.tethr.org/tubepress_pro_2_2_9/sys/ui/static/js/tubepress.js'></script>
-<link rel='stylesheet' href='http://revela.dev.tethr.org/tubepress_pro_2_2_9/sys/ui/themes/default/style.css' type='text/css' />
-<script type="text/javascript">function getTubePressBaseUrl(){return "http://revela.dev.tethr.org/tubepress_pro_2_2_9";}</script>
+<script type='text/javascript' src='http://www.revela.org.br/tubepress_pro_2_2_9/sys/ui/static/js/tubepress.js'></script>
+<link rel='stylesheet' href='http://www.revela.org.br/tubepress_pro_2_2_9/sys/ui/themes/default/style.css' type='text/css' />
+<script type="text/javascript">function getTubePressBaseUrl(){return "http://www.revela.org.br/tubepress_pro_2_2_9";}</script>
 
 <script src="/scripts/jquery.tools.min.js"></script>
 
@@ -43,9 +43,9 @@
 
 	<div id="socialicons">
 			<ul class="socialicons">
-			<li> <a href="http://www.facebook.com/pages/Revela/217569061637691" target="_blank"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_fb.png"></a></li>
-			<li> <a href="http://twitter.com/#!/search/revela" target="_blank"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_tw.png"></a></li>
-			<li> <a href="http://www.orkut.com.br/Community?rl=cpp&cmm=118347909"><img src="http://revela.dev.tethr.org/themes/newrevela/images/social_or.png"></a></li>
+			<li> <a href="http://www.facebook.com/pages/Revela/217569061637691" target="_blank"><img src="http://www.revela.org.br/themes/newrevela/images/social_fb.png"></a></li>
+			<li> <a href="http://twitter.com/#!/search/revela" target="_blank"><img src="http://www.revela.org.br/themes/newrevela/images/social_tw.png"></a></li>
+			<li> <a href="http://www.orkut.com.br/Community?rl=cpp&cmm=118347909"><img src="http://www.revela.org.br/themes/newrevela/images/social_or.png"></a></li>
 
 			</ul>
 		</div>
@@ -100,7 +100,7 @@
 			</div>
 			
 			
-			<img src="http://revela.dev.tethr.org/themes/newrevela/images/apoios.gif">
+			<img src="http://www.revela.org.br/themes/newrevela/images/apoios.gif">
 			
 			</br>
 			Powered by the Ushahidi Platform
@@ -111,7 +111,7 @@
 			
 						<!-- added by peter -->
 			<div id="beta">
-				<a href="#"><img src="http://revela.dev.tethr.org/themes/newrevela/images/rss.png" class="rssbutton"></a>
+				<a href="#"><img src="http://www.revela.org.br/themes/newrevela/images/rss.png" class="rssbutton"></a>
 			</div>
 			
 			<div id="logomenu" class="clearingfix">
