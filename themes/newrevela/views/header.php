@@ -44,7 +44,7 @@
 	<div id="socialicons">
 			<ul class="socialicons">
 			<li> <a href="http://www.facebook.com/pages/Revela/217569061637691" target="_blank"><img src="http://www.revela.org.br/themes/newrevela/images/social_fb.png"></a></li>
-			<li> <a href="http://twitter.com/#!/search/revela" target="_blank"><img src="http://www.revela.org.br/themes/newrevela/images/social_tw.png"></a></li>
+			<li> <a href="http://twitter.com/#!/PortalRevela" target="_blank"><img src="http://www.revela.org.br/themes/newrevela/images/social_tw.png"></a></li>
 			<li> <a href="http://www.orkut.com.br/Community?rl=cpp&cmm=118347909"><img src="http://www.revela.org.br/themes/newrevela/images/social_or.png"></a></li>
 
 			</ul>

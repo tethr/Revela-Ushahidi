@@ -425,12 +425,12 @@ Antes de se preocupar com o mundo, preocupe se com si mesmo.Se a questão é a f
 new TWTR.Widget({
   version: 2,
   type: 'search',
-  search: '#revela OR \"CÛdigo Florestal\"',
+  search: '#PortalRevela OR @imaflora OR @imazon OR from:imazon OR from:imaflora',
   interval: 30000,
-  title: 'Tweets Revela',
+  title: 'Revela Tweets',
   subject: '',
   width: 'auto',
-  height: 280,
+  height: 300,
   theme: {
     shell: {
       background: 'none',
@@ -454,7 +454,6 @@ new TWTR.Widget({
   }
 }).render().start();
 </script>
-
 </div>
 </div>
 
