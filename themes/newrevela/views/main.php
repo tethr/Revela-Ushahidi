@@ -502,7 +502,7 @@ Texto Legal - Política de Privacidade
 
 				</div> <!-- end legal text -->
 
-<span class="patrons"><img src="http://www.revela.org.br/themes/newrevela/images/patrons1.jpg"></span>
+<!-- span class="patrons"><img src="http://www.revela.org.br/themes/newrevela/images/patrons1.jpg"></span -->
 </div> <!-- end foot content -->
 
 
